@@ -59,7 +59,7 @@
     <input type="password" id="password" placeholder="Password" required>
     <button onclick="login()">Login</button>
     <br>
-    <button onclock="gohome()">Home</button>
+    <button onclick="gohome()">Home</button>
     <div class="error" id="error"></div>
   </div>
 
@@ -71,6 +71,7 @@
     function login() {
       const user = document.getElementById("username").value;
       const pass = document.getElementById("password").value;
+    }
     function gohome() {
       window.location.href="index.html";
     }
