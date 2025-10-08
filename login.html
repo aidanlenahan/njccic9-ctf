@@ -58,17 +58,21 @@
     <input type="text" id="username" placeholder="Username" required>
     <input type="password" id="password" placeholder="Password" required>
     <button onclick="login()">Login</button>
+    <button onclock="gohome()">Home</button>
     <div class="error" id="error"></div>
   </div>
 
   <script>
-    // Demo credentials (plaintext)
+
     const VALID_USERNAME = "admin";
     const VALID_PASSWORD = "password123";
 
     function login() {
       const user = document.getElementById("username").value;
       const pass = document.getElementById("password").value;
+    function gohome() {
+      window.location.href="index.html";
+    }
 
       if (user === VALID_USERNAME && pass === VALID_PASSWORD) {
         localStorage.setItem("loggedIn", "true");
