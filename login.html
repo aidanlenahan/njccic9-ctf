@@ -72,10 +72,6 @@
     function login() {
       const user = document.getElementById("username").value;
       const pass = document.getElementById("password").value;
-    }
-    function gohome() {
-      window.location.href="index.html";
-    }
 
       if (user === VALID_USERNAME && pass === VALID_PASSWORD) {
         localStorage.setItem("loggedIn", "true");
@@ -83,6 +79,9 @@
       } else {
         document.getElementById("error").textContent = "Invalid credentials.";
       }
+    }
+    function gohome() {
+      window.location.href="index.html";
     }
 
     // Redirect to postlogin.html if already logged in
